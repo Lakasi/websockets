@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>{{pageTitle}}</title>
+    <style>
+        body{
+            height: 100vh;
+            background: rgb(255,212,253);
+            background: linear-gradient(0deg, rgba(255,212,253,0.9472163865546218) 0%, rgba(255,160,250,1) 100%);
+        }
+        h1{
+            font-size: 3rem;
+            font-style: oblique;
+            text-align: center;
+            color: rgb(236, 206, 151);
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        #mensajesCont{
+            display: flex;
+            justify-content: center;
+
+        }
+        #mensajes{
+            min-height: 70%;
+            align-self: center;
+            position: relative;
+        }
+        #mensajes li{
+            font-size: 1.5rem;
+        }
+        #inputMensaje[type=text] {
+            width: 85%;
+            height: 100px;
+            margin-bottom: 15px;
+            padding: 4px 10px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #a7ffdf;
+            color: rgb(41, 41, 41);
+            resize: none;
+        }
+        #mensaje{
+            font-size: 2rem;
+            position: relative;
+        }
+        #btnEnviar{
+            background-color: #429979;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    {{{body}}}
+</body>
+</html>

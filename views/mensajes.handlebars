@@ -1,0 +1,20 @@
+<h1>Chat anti espias</h1>
+
+<h2 hidden>Mensajes</h2>
+{{!-- {{#if hayMensajes}}
+<ul>
+    {{#each mensajes}}
+    <li>({{this.fecha}}) {{this.autor}} : {{this.mensaje}}</li>
+    {{/each}}
+</ul>
+{{else}}
+<p>No hay mensajes...</p>
+{{/if}} --}}
+<div id="mensajes"></div>
+
+<label for="autor"></label> <input id="inputAutor" name="autor" type="text" hidden>
+<label for="mensaje"></label> <input id="inputMensaje" name="mensaje" type="text">
+<button id="btnEnviar">Enviar</button>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
